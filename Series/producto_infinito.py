@@ -9,12 +9,12 @@ def calc_alpha(n):
 
 k = int(input("¿Cuántas iteraciones quiere hacer? \n"))
 
-SUMA = 1
+producto = 1
 
 for i in range(2,k+1):
     a = calc_alpha(i)
-    SUMA *= a
+    producto *= a
 
-pi = 2 / SUMA
+pi = 2 / producto
 
 print(f"π = {pi}")
